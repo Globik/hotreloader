@@ -10,15 +10,15 @@ let l=path.resolve(n)
 watch.add(l);
 return require(l);
 }
-watch.on('change', p = > {
+watch.on('change', p => {
 debug('On change: ', p)
 module.invalidateByPath(p)			 
 					 })
 module.exports = reload;
-watch.on('add', p = > {
+watch.on('add', p => {
 debug('On added: ', p)
 })
-process.on('SIGINT',() = > {
+process.on('SIGINT',() => {
 watch.close();
 debug('Closing watch process.');
 process.exit(0)

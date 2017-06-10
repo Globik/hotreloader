@@ -31,7 +31,7 @@ const count = reload('./myModule.js') // it's the same like require('./myModule.
  module.exports={count};
  ```
  
- ## Then in a router(as example)
+ ## Then in a router(as example based on koa.js)
  
  Please make changes in a file and then in a router call that module file
  
@@ -48,6 +48,10 @@ const count = reload('./myModule.js') // it's the same like require('./myModule.
  Fs watchifying based on chokidar. Its options hardcoded as follows:
  
  `{ ignored: /[\/\\]\./, persistent: true,awaitWriteFinish:{stabilityThreshold:2000,pollInterval:100} }`
+ 
+ ## Projects
+ 
+ `hotreloader.js` works in the module ['koa-rend'](https://github.com/Globik/koa-rend)
  
  ## Happy coding!
  
