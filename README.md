@@ -51,7 +51,7 @@ const count = reload('./myModule.js') // it's the same like require('./myModule.
  
  ## Projects
  
- `hotreloader.js` works in the module ['koa-rend'](https://github.com/Globik/koa-rend)
+ `hotreloader.js` works in the module ['koa-rend'](https://github.com/Globik/koa-render)
  
  ## Happy coding!
  
