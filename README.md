@@ -15,9 +15,11 @@ const reload = require('hotreloader');
 // const myModule = require('./myModule.js');
 // for myModule.js to reloading you can do so:
 const count = reload('./myModule.js') // it's the same like require('./myModule.js')
- console.log(count.count())
- console.log(count.count())
+ console.log(count.count());
+ console.log(count.count());
  ```
+ 
+ 
  ## myModule.js
  
  ```javascript
@@ -26,8 +28,9 @@ const count = reload('./myModule.js') // it's the same like require('./myModule.
  var count = () = > {
  return cnt++;
  }
- module.exports={count}
+ module.exports={count};
  ```
+ 
  ## Then in a router(as example)
  
  Please make changes in a file and then in a router call that module file
@@ -39,6 +42,7 @@ const count = reload('./myModule.js') // it's the same like require('./myModule.
  ctx.body = count.count();
  })
  ```
+ 
  ## Chokidar
  
  Fs watchifying based on chokidar. Its options hardcoded as follows:
