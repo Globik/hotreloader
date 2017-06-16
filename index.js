@@ -4,7 +4,7 @@ const debug = require('debug')('hotreloader');
 const chokidar=require('chokidar');
 const path=require('path');
 const watch = new chokidar.FSWatcher({ ignored: /[\/\\]\./, persistent: true,awaitWriteFinish:{stabilityThreshold:2000,pollInterval:100} });
-
+var methods  = {};
 function reload(required) {
 var modulePath = path.resolve(required);
 watch.add(modulePath);
